@@ -1,0 +1,64 @@
+/*  ================================================================================
+	Helpers
+	Helpful classes and extentions  - more helpful global classes in .global.scss
+================================================================================  */
+
+@mixin device-size($size) {
+	@if $size == small {
+		@media (max-width: $mobileBreakPoint) { @content; }
+	}
+}
+
+@mixin hover($class: hover) {
+	html.#{$class} &:hover {
+		@content;
+	}
+}
+
+
+
+@function units($count) {
+	@return $count * $baseUnit;
+}
+
+@mixin max-width($width){
+	max-width: $width;
+	.lte-ie9 &{
+		width: $width;
+	}
+}
+
+.clearfix{
+	*zoom: 1;
+	&:before,
+	&:after{
+		content: " ";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+}
+
+@mixin clearfix(){
+	@extend .clearfix;
+}
+
+.largeLimit {
+	@include max-width($siteMaxWidth + $sitePadding*2);
+	margin: 0 auto;
+	padding: 0 $sitePadding;
+	position: relative;
+}
+
+.visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+

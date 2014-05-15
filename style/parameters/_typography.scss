@@ -1,0 +1,56 @@
+$defaultFontFamily: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$xLarge: 32px;
+$large: 22px;
+$mediumPlus: 20px;
+$medium: 16px;
+$normal: 14px;
+$small: 12px;
+$bigLineHeight: 23px;
+
+@mixin font1(){
+	font-family: $defaultFontFamily;
+}
+
+
+
+body,html{
+
+}
+body{
+	@include font1;
+	font-size: $small;
+	color: $swatch1;
+}
+
+h1{
+	font-size: $mediumPlus;
+}
+h2{
+	font-size: $normal;
+}
+h3{
+	font-size: $normal;
+}
+
+p{
+	font-size: $normal;
+}
+strong{
+	font-weight: bold;
+}
+input, select, option, button, .button{
+	font-family: $defaultFontFamily;
+}
+
+
+a{
+	@include font1;
+	color: $swatch1;
+	text-decoration: underline;
+	&:active,&:focus{
+		outline: none;
+	}
+}
+
+

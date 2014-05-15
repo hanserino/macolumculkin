@@ -1,0 +1,37 @@
+/*  ================================================================================
+	Parameters
+	Parameters for use in this project
+================================================================================  */
+$siteMaxWidth: 980px;
+
+$sitePadding: 20px;
+$smallSitePadding: 20px;
+
+
+/* Icon sizes */
+$defaultIconWidth: 16px;
+$defaultIconHeight: 16px;
+
+/* ========================================================================
+#TRANSITIONS: Default Transition variables
+========================================================================= */
+$default-transition-property: all;
+$default-transition-duration: .3s;
+$default-transition-function: false;
+$default-transition-delay: 0s;
+
+.transitionDefaults {
+	@include transition($default-transition-property $default-transition-duration $default-transition-delay $default-transition-function);
+}
+
+
+
+/* ========================================================================
+#DEFAULT BORDER RADIUS
+========================================================================= */
+$default-border-radius: 3px;
+
+.defaultBorderRadius {
+	@include border-radius($default-border-radius);
+}
+
