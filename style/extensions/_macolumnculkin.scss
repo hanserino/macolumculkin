@@ -3,6 +3,7 @@
 =========================================================================================  */
 $defaultGutterWidth: 2%;
 $maxColumns: 10;
+$containerMargin: 20px;
 
 [data-columns]{
 	width: 100%;
@@ -12,11 +13,11 @@ $maxColumns: 10;
 		@include inline-block;
 		vertical-align: top;
 		margin-right: -4px;
-		margin-top: units(2);
+		margin-top: $containerMargin;
 		border: 1px solid $swatch2;
 
 		@include device-size(small){
-			margin-top: units(1);
+			margin-top: $containerMargin/2;
 		}
 
 		>div{
