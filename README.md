@@ -30,9 +30,6 @@ In the example below we create a grid with 4 columns. On mobile/small devices it
 ```html
  <div data-columns="4" data-mobile-columns="2">
 	<div class="column">
-		<div> Column 1 </div>
-	</div>
-	<div class="column">2
 		<div data-columns="4" data-mobile-columns="2">
 			<div class="column">
 				<div>1</div>
