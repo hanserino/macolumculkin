@@ -40,5 +40,5 @@ The Macolumn Culkin grid system is a grid system based on three factors: <br>
 
 
 ## Licence
-Source code can be found on [github](https://github.com/eplehans/macolumculkin), licenced under [MIT](http://opensource.org/licenses/mit-license.php).
+Source code can be found on [github](https://github.com/eplehans/macolumculkin), licenced under [WTFPL](http://www.wtfpl.net/).<br>
 Developed by [Hans Kristian Smedsrød](http://about.me/eplehans).
