@@ -5,6 +5,8 @@ Responsive grid system based on two simple data attributes and a class
 Check out the [demo](http://macolumnculkin.azurewebsites.net/).
 
 ## How to use
+
+### Plain four column grid
 In the example below we create a grid with 4 columns. On mobile/small devices it switches to two columns.
 
 ```html
@@ -20,6 +22,31 @@ In the example below we create a grid with 4 columns. On mobile/small devices it
 	</div>
 	<div class="column">
 		<div> Column 4 </div>
+	</div>
+</div>
+```
+
+### Nesting columns
+```html
+ <div data-columns="4" data-mobile-columns="2">
+	<div class="column">
+		<div> Column 1 </div>
+	</div>
+	<div class="column">2
+		<div data-columns="4" data-mobile-columns="2">
+			<div class="column">
+				<div>1</div>
+			</div>
+			<div class="column">
+				<div>2</div>
+			</div>
+			<div class="column">
+				<div>3</div>
+			</div>
+			<div class="column">
+				<div>4</div>
+			</div>
+		</div>
 	</div>
 </div>
 ```
