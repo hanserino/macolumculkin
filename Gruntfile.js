@@ -8,9 +8,6 @@ var stylePath = 'style/',
 
 module.exports = function(grunt) {
 
-	grunt.log.write('This is how you log inside the gruntfile');
-
-
 	/* Timegrunt ===============================================
 	https://www.npmjs.org/package/time-grunt
 	============================================================ */
@@ -20,24 +17,6 @@ module.exports = function(grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-
-
-		/* Grunricon ===============================================
-		  https://www.npmjs.org/package/grunt-contrib-compass
-		============================================================ */
-		grunticon: {
-			myIcons: {
-				files: [{
-					expand: true,
-					cwd: iconsPath,
-					src: ['*.svg', '*.png'],
-					dest: stylePath+'css/'
-				}],
-				options: {
-					loadersnippet: "grunticon.loader.js"
-				}
-			}
-		},
 
 		/* Imagemin ===============================================
   		https://github.com/gruntjs/grunt-contrib-imagemin
@@ -61,8 +40,6 @@ module.exports = function(grunt) {
 	});
 
 	// Load the plugin that provides the "uglify" task.
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-grunticon');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
