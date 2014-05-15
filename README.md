@@ -1,6 +1,8 @@
 # Macolumn Culkin
 Responsive grid system based on two simple data attributes and a class
 
+## Demo
+Check out the [demo](http://macolumnculkin.azurewebsites.net/).
 
 ## How to use
 In the example below we create a grid with 4 columns. On mobile/small devices it switches to two columns.
@@ -21,11 +23,6 @@ In the example below we create a grid with 4 columns. On mobile/small devices it
 	</div>
 </div>
 ```
-
-
-
-## Demo
-Check out the [demo](http://macolumnculkin.azurewebsites.net/).<br>
 
 
 ##  How does it work?
