@@ -9,16 +9,23 @@ $containerMargin: 20px;
 	width: 100%;
 	display: block;
 
+	> .column{
+		margin-top: $containerMargin;
+		@include device-size(small){
+			margin-top: $containerMargin/2;
+		}
+		.column{
+			margin-top: 0px;
+			@include device-size(small){
+				margin-top: 0px;
+			}
+		}
+	}
 	.column{
 		@include inline-block;
 		vertical-align: top;
 		margin-right: -4px;
-		margin-top: $containerMargin;
 		border: 1px solid $swatch2;
-
-		@include device-size(small){
-			margin-top: $containerMargin/2;
-		}
 
 		>div{
 			display: block;
