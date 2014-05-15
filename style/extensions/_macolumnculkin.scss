@@ -46,26 +46,6 @@ $columns: $maxColumns;
 				padding-right: 0px;
 			}
 		}
-
-		//Nested columns need half the gutter width
-		//TODO: In theory we don't need this one if the parent loop is improved
-		$columns2: $maxColumns;
-		@while $columns2 > 0 {
-			[data-columns="#{$columns2}"],
-			[data-device-size="small"] [data-mobile-columns="#{$columns2}"]{
-				> .column{
-					width: percentage(1/$columns2);
-					padding: 0 ($defaultGutterWidth/4);
-					&:nth-child(#{$columns2}n+1){
-						padding-left: 0px;
-					}
-					&:nth-child(#{$columns2}n+#{$columns2}){
-						padding-right: 0px;
-					}
-				}
-			}
-			$columns2: $columns2 - 1;
-		}
 	}
 	$columns: $columns - 1;
 }
