@@ -1,24 +1,11 @@
 /*  ================================================================================
-	Helpers
-	Helpful classes and extentions  - more helpful global classes in .global.scss
+	Helpers - helpful mixins and classes
 ================================================================================  */
 
 @mixin device-size($size) {
 	@if $size == small {
 		@media (max-width: $mobileBreakPoint) { @content; }
 	}
-}
-
-@mixin hover($class: hover) {
-	html.#{$class} &:hover {
-		@content;
-	}
-}
-
-
-
-@function units($count) {
-	@return $count * $baseUnit;
 }
 
 @mixin max-width($width){
@@ -49,16 +36,5 @@
 	margin: 0 auto;
 	padding: 0 $sitePadding;
 	position: relative;
-}
-
-.visuallyHidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
 }
 

@@ -1,6 +1,5 @@
 /*  ================================================================================
 	Global Styles
-	A good place to specify top level styles and defaults for common elements
 ================================================================================  */
 
 *, *:before, *:after {
@@ -9,70 +8,23 @@
 	box-sizing: border-box;
 }
 
-html, body {
-}
-
-html {
-
-}
-
-body {
-}
-
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-[class*='icon-']{
-	height: $defaultIconHeight;
-	width: $defaultIconWidth;
-	background-size: 100%;
-	@include inline-block;
+
+body{
+	font-family: 'Helvetica Neue','helvetica', Sans-Serif;
+	color: $swatch1;
+	background: $swatch3;
 }
 
-[data-mobile-behaviour="takeover"]{
-	@include device-size(small){
-		width: 100% !important;
-		display: block !important;
-	}
-}
-
-
-/*  ================================================================================
-	Helpful classes
-================================================================================  */
-
-
-
-/*  ================================================================================
-	TABLES
-================================================================================  */
-table {
-	width: 100%;
-}
-
-table, th, td {
-	border-collapse: collapse;
-}
-
-th, td {
-}
-
-thead {
-	tr {
-	}
-}
-
-tbody {
-	td {
-	}
-	tr {
-	}
-}
-
-.visibleMobile {
-	display: none;
+header h1{
+	font-size: 30px;
+	font-weight: bold;
+	color: $swatch1;
+	margin: 10px 0;
 }
 
 /*  ================================================================================

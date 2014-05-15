@@ -30,7 +30,7 @@ Check out the [demo](http://macolumnculkin.azurewebsites.net/).<br>
 
 ##  How does it work?
 The Macolumn Culkin grid system is a grid system based on three factors: <br>
-* A SASS loop creating a fixed amount of available columns. It's up to you how many you want - just change the **$maxColumns** value in the [_macolumnculkin.scss](https://github.com/eplehans/macolumculkin/blob/master/style/extensions/_macolumnculkin.scss) file. <br>
+* A SASS loop creating a fixed amount of available columns. It's up to you how many you want - just change the **$maxColumns** value in the [_macolumnculkin.scss](https://github.com/eplehans/macolumculkin/blob/master/style/parameters/_macolumnculkin.scss) file. <br>
 * The gutter is the padding inside the .column divs (using the border-box model). Nested columns get half the gutter to align vertically with the parent columns.<br>
 * Instead of using media queries for breakpoints we give the body a data attribute ```[data-device-size="small"]```. This is then used as a switch in the SASS loop.<br>
 

@@ -5,11 +5,9 @@
 /* COMPASS FUNCTIONALITY IMPORTS */
 @import "compass/support", "compass/css3", "compass/reset";
 
-// Import Parameters	========================================
-@import "colors", "parameters", "typography";
 
-// Import Extensions	========================================
-@import "helpers", "mccolumnculkin";
+// Import Extensions and global parameters	========================================
+@import "parameters", "helpers", "macolumnculkin";
 
 // Import Partials	========================================
 @import "global";
