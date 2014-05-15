@@ -40,3 +40,8 @@ The Macolumn Culkin grid system is a grid system based on three factors: <br>
 * Because you don't wanna have to install a grid system through a command line and then have to learn a new syntax to be able to use it. <br>
 * Because we all can agree that numbers means more than words<br>
 * Because Macaulay Culkin wanted a better grid system. <br>
+
+
+## Licence
+Source code can be found on [github](https://github.com/eplehans/macolumculkin), licenced under [MIT](http://opensource.org/licenses/mit-license.php).
+Developed by [Hans Kristian Smedsrød](http://about.me/eplehans).
