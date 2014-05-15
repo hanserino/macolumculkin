@@ -1,4 +1,4 @@
-<h1>McColumn Culkin</h1>
+<h1>MacColumn Culkin</h1>
 <p>Responsive grid system based on two simple data attributes and a class</p>
 
 
@@ -23,3 +23,4 @@
 	</div>
 </div>
 ```
+
