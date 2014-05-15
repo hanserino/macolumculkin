@@ -28,7 +28,7 @@ In the example below we create a grid with 4 columns. On mobile/small devices it
 
 ### Nesting columns
 ```html
- <div data-columns="4" data-mobile-columns="2">
+ <div data-columns="2" data-mobile-columns="1">
 	<div class="column">
 		<div data-columns="4" data-mobile-columns="2">
 			<div class="column">
@@ -56,10 +56,10 @@ The Macolumn Culkin grid system is a grid system based on three factors: <br>
 
 
 ## Why?
-* Because inline-blocks are so much awesomer than floats - yes, we get a pseudo space, but who cares? We got rid of it.<br>
-* Because you don't wanna have to install a grid system through a command line and then have to learn a new syntax to be able to use it. <br>
-* Because we all can agree that numbers means more than words<br>
-* Because Macaulay Culkin wanted a better grid system. <br>
+* Because inline-blocks are so much awesomer than floats.
+* Because you don't wanna have to install a grid system through a command line and then have to learn a new syntax to be able to use it.
+* Because we all can agree that numbers means more than words
+* Because Macaulay Culkin wanted a better grid system.
 
 ## Browser support
 Browsers supporting these features:<br>
