@@ -1,5 +1,7 @@
 /*****************************************************************************
 
-Who was involved in the project?
+Created by Hans Kristian Smedsrød
+Twitter: @eplehans
+Github: https://github.com/eplehans
 
 *****************************************************************************/
