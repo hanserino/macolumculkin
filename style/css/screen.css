@@ -2531,14 +2531,18 @@ img {
   height: auto;
 }
 
-/* line 17, ../partials/_global.scss */
+/* line 16, ../partials/_global.scss */
 body {
-  font-family: 'Helvetica Neue','helvetica', Sans-Serif;
+  font-family: 'Helvetica Neue', 'helvetica', Sans-Serif;
   color: #333333;
   background: #ebebeb;
 }
 
-/* line 23, ../partials/_global.scss */
+/* line 22, ../partials/_global.scss */
+header {
+  margin-bottom: 35px;
+}
+/* line 24, ../partials/_global.scss */
 header h1 {
   font-size: 30px;
   font-weight: bold;
@@ -2550,17 +2554,17 @@ header h1 {
 	SMALL SCREENS
 ================================================================================  */
 @media (max-width: 650px) {
-  /* line 34, ../partials/_global.scss */
+  /* line 37, ../partials/_global.scss */
   .largeLimit {
     padding: 0 0 0 0;
   }
 
-  /* line 38, ../partials/_global.scss */
+  /* line 41, ../partials/_global.scss */
   .smallLimit {
     width: 100%;
     padding: 0 20px !important;
   }
-  /* line 41, ../partials/_global.scss */
+  /* line 44, ../partials/_global.scss */
   .smallLimit.largeLimit {
     padding: 0 20px !important;
   }

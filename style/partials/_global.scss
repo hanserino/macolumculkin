@@ -13,18 +13,21 @@ img {
 	height: auto;
 }
 
-
-body{
-	font-family: 'Helvetica Neue','helvetica', Sans-Serif;
+body {
+	font-family: 'Helvetica Neue', 'helvetica', Sans-Serif;
 	color: $swatch1;
 	background: $swatch3;
 }
 
-header h1{
-	font-size: 30px;
-	font-weight: bold;
-	color: $swatch1;
-	margin: 10px 0;
+header {
+	margin-bottom: 35px;
+	h1 {
+		font-size: 30px;
+		font-weight: bold;
+		color: $swatch1;
+		margin: 10px 0;
+	}
+
 }
 
 /*  ================================================================================
