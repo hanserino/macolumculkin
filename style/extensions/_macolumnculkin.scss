@@ -47,6 +47,7 @@ $columns: $maxColumns;
 		}
 
 		//Nested columns need half the gutter width
+		//TODO: Get rid of this loop
 		$columns2: $maxColumns;
 		@while $columns2 > 0 {
 			[data-columns="#{$columns2}"],
