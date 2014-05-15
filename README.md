@@ -31,12 +31,13 @@ Check out the [Demo](http://macolumnculkin.azurewebsites.net/) page.<br>
 
 ##  How does it work?
 The Macolumn Culkin grid system is a grid system based on three factors: <br>
-* A SASS loop creating a fixed amount of available columns (it's up to you how many you want - just change the **$maxColumns** value in the [_macolumnculkin.scss file](https://github.com/eplehans/macolumculkin/blob/master/style/extensions/_macolumnculkin.scss) <br>
+* A SASS loop creating a fixed amount of available columns (it's up to you how many you want - just change the **$maxColumns** value in the [_macolumnculkin.scss](https://github.com/eplehans/macolumculkin/blob/master/style/extensions/_macolumnculkin.scss) file<br>
 * The gutter is the padding inside the .column divs the border-box model. Nested columns get half the gutter.<br>
-* Instead of using media queries for breakpoints we give the body a data attribute ```html[data-device-size="small"]```. This is then used as a switch in the SASS loop.<br>
+* Instead of using media queries for breakpoints we give the body a data attribute ```[data-device-size="small"]```. This is then used as a switch in the SASS loop.<br>
 
 
 ## Why?
-* Because we all hate using float where it doesn't belong
-* Because you don't wanna have to install a grid system through a command line to be able to use it.
-* Because we all can agree that a number means more than a word
+* Because inline-blocks are so much awesomer than floats - yes, we get a pseudo space, but who cares? <br>
+* Because you don't wanna have to install a grid system through a command line and then learn a new syntax to be able to use it. <br>
+* Because we all can agree that a number means more than a word <br>
+* Because Macaulay Culkin wants you to use it. <br>
