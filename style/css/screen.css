@@ -76,30 +76,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*  ================================================================================
 	Helpers - helpful mixins and classes
 ================================================================================  */
-/* line 18, ../extensions/_helpers.scss */
-.clearfix {
-  *zoom: 1;
-}
-/* line 21, ../extensions/_helpers.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 25, ../extensions/_helpers.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 34, ../extensions/_helpers.scss */
+/* line 12, ../extensions/_helpers.scss */
 .largeLimit {
-  max-width: 1020px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 20px;
   position: relative;
-}
-/* line 13, ../extensions/_helpers.scss */
-.lte-ie9 .largeLimit {
-  width: 1020px;
 }
 
 /*  =====================================================================================
