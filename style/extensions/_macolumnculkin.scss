@@ -5,55 +5,75 @@ $defaultGutterWidth: 2%;
 $maxColumns: 20;
 $containerMargin: 20px;
 
-[data-columns]{
+[data-columns] {
 	width: 100%;
 	display: block;
 	//border: 1px solid $swatch2;
 
-	> .column{
+	> .column {
 		margin-top: $containerMargin;
-		@include device-size(small){
+		@include device-size(small) {
 			margin-top: $containerMargin/2;
 		}
-		.column{
+		.column {
 			margin-top: 0px;
-			@include device-size(small){
+			@include device-size(small) {
 				margin-top: 0px;
 			}
 		}
 	}
-	.column{
+	.column {
 		@include inline-block;
 		vertical-align: top;
 		margin-right: -4px;
 		border: 1px solid $swatch2;
 
-		> div{
+		> div {
 			display: block;
-			//border: 1px solid $swatch2;
 		}
 
-		[data-columns]{
+		[data-columns] {
 			@include inline-block;
 			vertical-align: top;
 		}
 	}
 }
 
+
+/* Default columns */
 $columns: $maxColumns;
 @while $columns > 0 {
-	[data-columns="#{$columns}"],
-	[data-device-size="small"] [data-mobile-columns="#{$columns}"]{
-		> .column{
+	[data-columns="#{$columns}"] {
+		> .column {
 			width: percentage(1/$columns);
 			padding: 0 ($defaultGutterWidth/2);
-			&:nth-child(#{$columns}n+1){
+			&:nth-child(#{$columns}n+1) {
 				padding-left: 0px;
 			}
-			&:nth-child(#{$columns}n+#{$columns}){
+			&:nth-child(#{$columns}n+#{$columns}) {
 				padding-right: 0px;
 			}
 		}
 	}
 	$columns: $columns - 1;
+}
+
+/* Mobile columns */
+$mobileColumns: $maxColumns;
+@while $mobileColumns > 0 {
+	[data-mobile-columns="#{$mobileColumns}"] {
+		@include device-size(small) {
+			> .column {
+				width: percentage(1/$mobileColumns);
+				padding: 0 ($defaultGutterWidth/2);
+				&:nth-child(#{$mobileColumns}n+1) {
+					padding-left: 0px;
+				}
+				&:nth-child(#{$mobileColumns}n+#{$mobileColumns}) {
+					padding-right: 0px;
+				}
+			}
+		}
+		$mobileColumns: $mobileColumns - 1;
+	}
 }
