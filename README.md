@@ -2,10 +2,9 @@
 <p>Responsive grid system based on two simple data attributes and a class</p>
 
 
+
 <h3>How to use</h3>
 <p>In the example below we create a grid with 4 columns. On mobile/small devices it switches to two columns.</p>
-
-
 
 ```html
  <div data-columns="4" data-mobile-columns="2">
@@ -23,4 +22,10 @@
 	</div>
 </div>
 ```
+
+
+
+<h3>Demo</h3>
+Try on [Demo](http://macolumnculkin.azurewebsites.net/) page.<br>
+
 
