@@ -2,12 +2,13 @@
 	McColumn Culkin - Simple grid system
 =========================================================================================  */
 $defaultGutterWidth: 2%;
-$maxColumns: 10;
+$maxColumns: 20;
 $containerMargin: 20px;
 
 [data-columns]{
 	width: 100%;
 	display: block;
+	//border: 1px solid $swatch2;
 
 	> .column{
 		margin-top: $containerMargin;
@@ -27,9 +28,9 @@ $containerMargin: 20px;
 		margin-right: -4px;
 		border: 1px solid $swatch2;
 
-		>div{
+		> div{
 			display: block;
-			border: 1px solid $swatch2;
+			//border: 1px solid $swatch2;
 		}
 
 		[data-columns]{
