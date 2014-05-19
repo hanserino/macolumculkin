@@ -1,14 +1,59 @@
 /*  =====================================================================================
 	McColumn Culkin
 =========================================================================================  */
-$defaultGutterWidth: 2%;
+
+//                           .?I$7DNMNM8MNMDMMMNN8$$.
+//                        .+?77?ODNMNMNMNMNNMDMDNNDD$$.
+//                       7IZ$$O$ODDDN8DMNMMDNMMMDDDZZOZ7.
+//                     .87Z8$O7M888NNODNMNDND88DDOO7$ZZ7$.
+//                     OZODO8$ZIO8ON88ODN8DD87OO8$ZZZ88=?7.
+//                    OZZ88OZD$O7O8O$ZOD8ZOOZ+ZZO77I7$ND7=7
+//                   =OZDO8OO$$$?I$$ZZ$Z?ZO$+I$77+????$8Z?7.
+//                   DDOZ888Z7I?ZII77IZ$+Z7I=~77=+?+++?ZOI?I
+//                   O8OD8OO+Z$$$I?77O7I?I?+~=?+=+++=+?$$77?
+//                  .Z8D8ZO8OZZO$II7II???+I?~++====+=++7ZZ$=.
+//                  .$OO8Z78ZZ$$7$II+7?+?$7I=??~====+++I?77+..
+//                   $88$Z$$Z7Z7$7I77$77?$I+=+?+??==+++?I7$?.
+//                  .Z8NOZZ7ZIZ$7777$$II+I++=+===+++=?++I7I?
+//                  .O8D8$Z7$Z77III7$$??+I+=+=++++=+==??I+++
+//                   IO88O8OZ77II7ZZ7I??++==++??I7I?+++?I77=
+//                    O8888Z$7I?7$7O??7?I+~=+?IO7O??+++??II=
+//                 .OOOOOOZZ$77$?~DM$,O?7?=++=:$MO,I?+++II?.
+//                 .ZOOOZOOZ7III7I77I??77?++++?++7?++++???++?.
+//                 .7ZOOOZZZ$7I???????I77I+??++====+++++++=+I+.
+//                  +Z$OO8ZZI?7??+++??I7$7???+=====+?I?+?+=+7.
+//                  .$$OO8ZZIOIII++++??Z7?+=?+=====+I7+7?==+,.
+//                   $ZO8O7$?O?+$??+++O?I?++++====+I++++=++=
+//                    ZOOZ87+OI+7??++?7?7Z?=$?==+++?=I+??++.
+//                    .OOOO?=Z?+I+??+??I+=+=++++??=??I==?+.
+//                       7Z?=7==$?+?II?++=~===++I+??=+==+
+//                       78+I7==7?+I77?+?+=+==+?I++?==++?.
+//                       +O?I7+=I==77I$7III??I??I==?=+=+?.
+//                       :O?77=?I==7$7ZDDNNMMZ7O7+=?=+==+.
+//                        O?ZI=?I==7$OOOOZ8NMMZDI+++====?.
+//                        OI$I=+I=~$+$ZZZZZO7O8M?==+==+=?.
+//                       =ZI$7++7+=+$,I77I$D+O$O?==+==+=+.
+//                       .87OI?I?+==IZ7II?+II$M7+==++=++:.
+//                        .OO7III+===7?++++++O7?+==+=+?I..
+//                     . ..N8Z7I?+===+?+=+++77?++=+++?IO88..
+//           ... .. ..M8NNMMN8Z7I?+===+I+++?7I+++++?ZZOO888OOO   .
+//     . O8OO888DO8D8OMM8MMMMDO8DM8OO$O87IIZ7I$DO8ONZMDO88888M8N8D888OD..
+//   .N8OD8888D8NO8O8M888DMMNMMM8ON88OOZOO8DDZMOZOZOO8OD888MN88D88O88O888.
+//  .ND8NMD8MD888NN888OMMMMMMMMOOOMDDO8OOD8OOMZMZD8O8O888888DD88D8DDO88888O
+
+
+
+$defaultGutterWidth: 10px;
 $maxColumns: 10;
 $containerMargin: 20px;
+
 
 [data-columns] {
 	width: 100%;
 	display: block;
-	//border: 1px solid $swatch2;
+	//padding: 0 $containerMargin;
+	border: 1px solid $swatch2;
+	background: #bbb;
 
 	> .column {
 		margin-top: $containerMargin;
@@ -47,12 +92,6 @@ $columns: $maxColumns;
 		> .column {
 			width: percentage(1/$columns);
 			padding: 0 ($defaultGutterWidth/2);
-			&:nth-child(#{$columns}n+1) {
-				padding-left: 0px;
-			}
-			&:nth-child(#{$columns}n+#{$columns}) {
-				padding-right: 0px;
-			}
 		}
 	}
 	$columns: $columns - 1;
@@ -65,13 +104,6 @@ $mobileColumns: $maxColumns;
 		@include device-size(small) {
 			> .column {
 				width: percentage(1/$mobileColumns);
-				padding: 0 ($defaultGutterWidth/2);
-				&:nth-child(#{$mobileColumns}n+1) {
-					padding-left: 0px;
-				}
-				&:nth-child(#{$mobileColumns}n+#{$mobileColumns}) {
-					padding-right: 0px;
-				}
 			}
 		}
 		$mobileColumns: $mobileColumns - 1;
